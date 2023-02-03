@@ -1,5 +1,11 @@
 name: Actions workflow
-on: [push, pull_request]
+#on: [push, pull_request]
+on: 
+  push:
+  pull_request:
+    types:
+      - closed
+      - assigned
 jobs: 
   run-shell-comand:
     runs-on: ubuntu-latest
