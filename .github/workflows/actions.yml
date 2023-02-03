@@ -6,7 +6,6 @@ jobs:
     steps:
       - name: List files
         run: |
-          pwd
           ls -a
           echo $GITHUB_SHA
       - name: Checkout
